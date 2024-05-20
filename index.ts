@@ -6,6 +6,7 @@ import inquirer from "inquirer";
 const answer = await inquirer.prompt([
   { message: "Enter your first number", type: "number", name: "firstNumber" },
   { message: "Enter your second number", type: "number", name: "secondNumber" },
+console.log("Walcome to the command line calculator")
   {
     message: "select one of the operators to perform an operation",
     type: "list",
@@ -31,3 +32,4 @@ else {
     console.log("please enter valid operator")
 }
 console.log("THE END");
+
